@@ -25,3 +25,13 @@ test('it can handle empty graph', function(t) {
 
   t.end();
 });
+
+test('run twice, same clusters', function(t) {
+    var graph = createMiseablesGraph();
+    var community1 = modularity(graph);
+    var community2 = modularity(graph);
+
+    t.equals(community1.getClass(76), community2.getClass(76), 'Node belongs to the same cluster');
+
+    t.end();
+});

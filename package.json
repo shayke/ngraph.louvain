@@ -1,6 +1,6 @@
 {
-  "name": "ngraph.louvain",
-  "version": "1.0.1",
+  "name": "@sedona/ngraph.louvain",
+  "version": "1.0.2",
   "description": "Given a graph instance detects communities using the Louvain Method",
   "main": "index.js",
   "scripts": {
@@ -21,17 +21,11 @@
     "type": "git",
     "url": "https://github.com/anvaka/ngraph.louvain"
   },
-  "dependencies": {
-    "bindings": "^1.2.1",
-    "nan": "^2.4.0",
-    "ngraph.random": "0.0.1"
-  },
   "devDependencies": {
     "miserables": "^1.0.0",
     "ngraph.coarsen": "^1.2.0",
     "ngraph.graph": "0.0.12",
     "ngraph.svg": "0.0.15",
-    "ngyp": "^1.0.1",
     "tap": "^5.7.1"
   }
 }

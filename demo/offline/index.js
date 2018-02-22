@@ -1,7 +1,7 @@
-var detectClusters = require('../../native.js').fromNgraph;
+var modularity = require('../');
 
 var graph = require('miserables');
-var clusters = detectClusters(graph);
+var clusters = modularity(graph);
 
 graph.forEachNode(function(node) {
   console.log('Node ' + node.id + ' belongs to ' + clusters.getClass(node.id));
